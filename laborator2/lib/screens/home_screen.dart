@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'recipe_ingrident.dart'; // Schimbă importul la RecipeIngrident
+import 'recipe_ingrident.dart'; 
 
 class HomeScreen extends StatelessWidget {
   // Lista de categorii
@@ -104,7 +104,7 @@ class HomeScreen extends StatelessWidget {
               // New Recipes
               _buildNewRecipes(context),
 
-              // Bottom spacer
+             
               SizedBox(height: 90),
             ],
           ),
@@ -165,7 +165,7 @@ class HomeScreen extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
       child: Row(
         children: [
-          // Bara de căutare (partea stângă)
+         
           Expanded(
             child: Container(
               height: 40,
@@ -198,22 +198,22 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
 
-          // Spațiu între search bar și butonul de filtru
+        
           SizedBox(width: 15),
 
-          // Butonul de filtru cu imagine
+         
           Container(
             width: 40,
             height: 40,
             decoration: ShapeDecoration(
-              color: const Color(0xFF119475), // Verde
+              color: const Color(0xFF119475), 
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
             child: IconButton(
               icon: Image.asset(
-                'assets/images/Filter.png', // Calea către imaginea ta
+                'assets/images/Filter.png', 
                 width: 18,
                 height: 18,
               ),
@@ -305,7 +305,7 @@ class HomeScreen extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          // Recipe Image
+                         
                           Container(
                             width: 160,
                             height: 130,
@@ -321,13 +321,13 @@ class HomeScreen extends StatelessWidget {
                             ),
                           ),
 
-                          // Recipe Info
+                         
                           Padding(
                             padding: const EdgeInsets.all(12),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                // Recipe Name - CENTRAT
+                               
                                 Text(
                                   _formatRecipeName(recipe['name']),
                                   textAlign: TextAlign.center,
@@ -342,15 +342,15 @@ class HomeScreen extends StatelessWidget {
 
                                 SizedBox(height: 8),
 
-                                // Time + Bookmark - ROW PENTRU ALINIERE ORIZONTALĂ
+                             
                                 Container(
                                   width: double.infinity,
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment
                                         .spaceBetween,
-                                    // TIME STÂNGA, BOOKMARK DREAPTA
+                                  
                                     children: [
-                                      // Time - PARTEA STÂNGA
+                                     
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment
                                             .start,
@@ -377,7 +377,7 @@ class HomeScreen extends StatelessWidget {
                                         ],
                                       ),
 
-                                      // Bookmark - PARTEA DREAPTA
+                                    
                                       Image.asset(
                                         'assets/images/Bookmark.png',
                                         width: 16,
@@ -392,7 +392,7 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
 
-                      // RATING POZIȚIONAT PE IMAGINE
+                    
                       Positioned(
                         top: 8,
                         right: 8,
@@ -434,7 +434,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-// FUNCȚIE PENTRU FORMATAREA NUMELUI REȚETEI PE DOUĂ RÂNDURI
+
   String _formatRecipeName(String name) {
     if (name == 'Classic Greek Salad') {
       return 'Classic Greek\nSalad';
@@ -511,18 +511,18 @@ class HomeScreen extends StatelessWidget {
                   ),
                   child: Stack(
                     children: [
-                      // Recipe Details
+                    
                       Padding(
                         padding: const EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            // Recipe Name + Rating
+                          
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                // Recipe Name
+                               
                                 Text(
                                   _formatNewRecipeName(recipe['name']),
                                   style: TextStyle(
@@ -536,7 +536,7 @@ class HomeScreen extends StatelessWidget {
                                   overflow: TextOverflow.ellipsis,
                                 ),
                                 SizedBox(height: 4),
-                                // Rating Stars
+                               
                                 Row(
                                   children: [
                                     Icon(Icons.star, size: 16, color: Colors.amber),
@@ -549,11 +549,11 @@ class HomeScreen extends StatelessWidget {
                               ],
                             ),
 
-                            // Author and Time - SEPARAT COMPLET
+                          
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                // Author - STÂNGA
+                              
                                 Expanded(
                                   child: Row(
                                     children: [
@@ -585,7 +585,7 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 ),
 
-                                // Time - DREAPTA (COMPLET SEPARAT)
+                             
                                 Container(
                                   margin: EdgeInsets.only(left: 10),
                                   child: Row(
@@ -610,7 +610,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
 
-                      // Recipe Image
+                 
                       Positioned(
                         top: -3,
                         left: 170,
@@ -645,14 +645,14 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-// FUNCȚIE PENTRU FORMATAREA NUMELUI REȚETELOR NOI
+
   String _formatNewRecipeName(String name) {
     if (name == 'Steak with tomato sauce and bulgur rice') {
       return 'Steak with tomato...';
     } else if (name == 'Pilaf sweet with lamb-and-raisins') {
       return 'Pilaf sweet';
     }
-    // Pentru celelalte rețete, le scurtăm dacă sunt prea lungi
+    
     if (name.length > 20) {
       return name.substring(0, 20) + '...';
     }
