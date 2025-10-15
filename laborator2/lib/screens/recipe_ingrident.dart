@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RecipeIngrident extends StatelessWidget {
-  // Lista de ingrediente cu imagini din assets
+  // Lista de ingrediente 
   final List<Map<String, dynamic>> ingredients = [
     {'name': 'Tomatos', 'quantity': '500g', 'image': 'assets/images/tomato.png'},
     {'name': 'Cabbage', 'quantity': '300g', 'image': 'assets/images/cabbage.png'},
@@ -49,7 +49,7 @@ class RecipeIngrident extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.arrow_back, color: Colors.black),
             onPressed: () {
-              // Folosește Navigator.maybePop pentru a evita erorile
+              
               Navigator.maybePop(context);
             },
           ),
@@ -79,7 +79,7 @@ class RecipeIngrident extends StatelessWidget {
               ),
             ),
           ),
-          // Gradient overlay
+         
           Container(
             width: double.infinity,
             height: 150,
@@ -92,7 +92,7 @@ class RecipeIngrident extends StatelessWidget {
               ),
             ),
           ),
-          // Rating badge (sus în dreapta)
+      
           Positioned(
             right: 10,
             top: 10,
@@ -122,13 +122,13 @@ class RecipeIngrident extends StatelessWidget {
               ),
             ),
           ),
-          // Timp și bookmark (dreapta jos)
+      
           Positioned(
             right: 10,
             bottom: 10,
             child: Row(
               children: [
-                // Timp
+               
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -146,7 +146,7 @@ class RecipeIngrident extends StatelessWidget {
                   ],
                 ),
                 SizedBox(width: 8),
-                // Bookmark icon - folosind imaginea
+              
                 Container(
                   width: 24,
                   height: 24,
@@ -187,7 +187,7 @@ class RecipeIngrident extends StatelessWidget {
                         fontSize: 14,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w600,
-                        height: 1.2, // Pentru spațiere între rânduri
+                        height: 1.2,
                       ),
                     ),
                   ],
