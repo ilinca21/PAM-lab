@@ -1,0 +1,70 @@
+{
+  "recipes": [
+    {
+      "category": "All",
+      "imagePath": "assets/images/classic_greek_salad.png",
+      "title": "Classic Greek Salad",
+      "rating": 4.5,
+      "time": "15 Mins",
+      "serves": 2,
+      "reviewCount": "1.2k",
+      "ingredients": [
+        { "name": "Tomatoes", "imagePath": "assets/images/tomato.png", "grams": 300 },
+        { "name": "Cabbage", "imagePath": "assets/images/cabbage.png", "grams": 200 },
+        { "name": "Bread", "imagePath": "assets/images/bread.png", "grams": 150 }
+      ]
+    },
+    {
+      "category": "All",
+      "imagePath": "assets/images/crunchy_nut_coleslaw.png",
+      "title": "Crunchy Nut Coleslaw",
+      "rating": 3.5,
+      "time": "10 Mins",
+      "serves": 1,
+      "reviewCount": "980",
+      "ingredients": [
+        { "name": "Cabbage", "imagePath": "assets/images/cabbage.png", "grams": 250 },
+        { "name": "Tomatoes", "imagePath": "assets/images/tomato.png", "grams": 150 }
+      ]
+    },
+    {
+      "category": "Italian",
+      "imagePath": "assets/images/pasta_carbonara.jpg",
+      "title": "Pasta Carbonara",
+      "rating": 4.7,
+      "time": "20 Mins",
+      "serves": 3,
+      "reviewCount": "2.3k",
+      "ingredients": [
+        { "name": "Tomatoes", "imagePath": "assets/images/tomato.png", "grams": 200 },
+        { "name": "Pasta", "imagePath": "assets/images/pasta.jfif", "grams": 100 }
+      ]
+    },
+    {
+      "category": "Indian",
+      "imagePath": "assets/images/indian_curry.jpg",
+      "title": "Indian Curry",
+      "rating": 4.8,
+      "time": "25 Mins",
+      "serves": 4,
+      "reviewCount": "3.1k",
+      "ingredients": [
+        { "name": "Tomatoes", "imagePath": "assets/images/tomato.png", "grams": 250 },
+        { "name": "Bread", "imagePath": "assets/images/bread.png", "grams": 100 }
+      ]
+    },
+    {
+      "category": "Chinese",
+      "imagePath": "assets/images/chinese_rice.jpg",
+      "title": "Chinese Fried Rice",
+      "rating": 4.6,
+      "time": "12 Mins",
+      "serves": 2,
+      "reviewCount": "1.7k",
+      "ingredients": [
+        { "name": "Tomatoes", "imagePath": "assets/images/tomato.png", "grams": 120 },
+        { "name": "Rice", "imagePath": "assets/images/rice.jpg", "grams": 200 }
+      ]
+    }
+  ]
+}
