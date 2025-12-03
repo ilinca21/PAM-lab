@@ -1,0 +1,86 @@
+{
+  "categories": [
+    "All", "Indian", "Italian", "Asian", "Chinese",
+    "Fruit", "Vegetables", "Protein", "Cereal", "Local Dishes"
+  ],
+  "popularRecipes": [
+    {
+      "name": "Classic Greek Salad",
+      "time": "15 Mins",
+      "rating": "4.5",
+      "image": "assets/images/Image.png"
+    },
+    {
+      "name": "Crunchy Nut Coleslaw",
+      "time": "10 Mins",
+      "rating": "3.5",
+      "image": "assets/images/coleslaw.png"
+    },
+    {
+      "name": "Shrimp Chicken Andouille Sausage Jambalaya",
+      "time": "10 Mins",
+      "rating": "3.0",
+      "image": "assets/images/jambalaya1.png"
+    },
+    {
+      "name": "Barbecue Chicken Jollof Rice",
+      "time": "10 Mins",
+      "rating": "4.5",
+      "image": "assets/images/rice1.png"
+    },
+    {
+      "name": "Portuguese Piri Piri Chicken",
+      "time": "10 Mins",
+      "rating": "4.5",
+      "image": "assets/images/chicken.png"
+    }
+  ],
+  "newRecipes": [
+    {
+      "name": "Steak with tomato sauce and bulgur rice",
+      "time": "20 mins",
+      "author": "James Milner",
+      "authorImage": "assets/images/james.jpg",
+      "image": "assets/images/steak.png",
+      "id": 201
+    },
+    {
+      "name": "Pilaf sweet with lamb-and-raisins",
+      "time": "20 mins",
+      "author": "Laura Wilson",
+      "authorImage": "assets/images/laura_wilson.png",
+      "image": "assets/images/pilaf.png",
+      "id": 202
+    },
+    {
+      "name": "Rice Pilaf, Broccoli and Chicken",
+      "time": "20 mins",
+      "author": "Lucas Moura",
+      "authorImage": "assets/images/3.png",
+      "image": "assets/images/broccoli.png",
+      "id": 203
+    },
+    {
+      "name": "Chicken meal with sauce",
+      "time": "20 mins",
+      "author": "Issabella Ethan",
+      "authorImage": "assets/images/4.png",
+      "image": "assets/images/sauce.png",
+      "id": 204
+    },
+    {
+      "name": "Stir-fry chicken with broccoli in sweet and sour sauce and rice",
+      "time": "20 mins",
+      "author": "Miquel Ferran",
+      "authorImage": "assets/images/5.png",
+      "image": "assets/images/fry.png",
+      "id": 205
+    }
+  ],
+  "ingredients": [
+    { "name": "Tomatos", "quantity": "500g", "image": "assets/images/tomato.png" },
+    { "name": "Cabbage", "quantity": "300g", "image": "assets/images/cabbage.png" },
+    { "name": "Taco", "quantity": "300g", "image": "assets/images/taco.png" },
+    { "name": "Slice Bread", "quantity": "300g", "image": "assets/images/bread.png" }
+  ]
+}
